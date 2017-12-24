@@ -37,11 +37,10 @@ Rails.application.configure do
   # config.action_cable.allowed_request_origins = [ 'http://example.com', /http:\/\/example.*/ ]
 
   # Force all access to the app over SSL, use Strict-Transport-Security, and use secure cookies.
-  # config.force_ssl = true
+  config.force_ssl = true
 
-  # Use the lowest log level to ensure availability of diagnostic information
-  # when problems arise.
-  config.log_level = :debug
+  # No queremos ningún tipo de log que guarde mensajes
+  config.log_level = :unknown
 
   # Prepend all log lines with the following tags.
   config.log_tags = [ :request_id ]
@@ -72,4 +71,9 @@ Rails.application.configure do
     logger.formatter = config.log_formatter
     config.logger    = ActiveSupport::TaggedLogging.new(logger)
   end
+
+  routes.default_url_options = {
+    host: 'theremin.partidopirata.com.ar',
+    protocol: 'https'
+  }
 end
