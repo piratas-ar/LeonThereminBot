@@ -1,0 +1,9 @@
+es:
+  telegram_webhooks:
+    start:
+      hi: 'Hola! Enviame audios para que los convierta a mp3 :)'
+    message:
+      not_found: 'No pude descargar el archivo'
+      invalid: 'No entiendo este archivo'
+      nothing: ':)'
+
