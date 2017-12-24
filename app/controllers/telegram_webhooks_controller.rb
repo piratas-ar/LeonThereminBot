@@ -47,6 +47,7 @@ class TelegramWebhooksController < Telegram::Bot::UpdatesController
     end
 
     # Convertir a MP3
+    respond_with :message, text: t('.ok')
     converted = convert.transcode(mp3)
     mp3 = File.open(mp3)
 

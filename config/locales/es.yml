@@ -6,4 +6,4 @@ es:
       not_found: 'No pude descargar el archivo'
       invalid: 'No entiendo este archivo'
       nothing: ':)'
-
+      ok: 'Bueno! Convirtiendo...'
