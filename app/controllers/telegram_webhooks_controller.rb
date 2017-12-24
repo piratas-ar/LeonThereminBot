@@ -53,6 +53,7 @@ class TelegramWebhooksController < Telegram::Bot::UpdatesController
 
     # Enviar el archivo
     respond_with :document, document: mp3
+    respond_with :message, text: t('.deleted')
 
     # Cerrar los archivos abiertos y eliminarlos!
     [ mp3, file ].each { |f| close_and_remove f }
