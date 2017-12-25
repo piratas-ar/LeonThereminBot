@@ -6,6 +6,7 @@ git_source(:github) do |repo_name|
 end
 
 gem 'dotenv-rails', require: 'dotenv/rails-now'
+gem 'listen', '>= 3.0.5', '< 3.2'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '~> 5.1.4'
 # Use Puma as the app server
@@ -24,7 +25,6 @@ group :development do
   gem 'capistrano-rails'
   gem 'capistrano-rbenv'
   gem 'capistrano-passenger'
-  gem 'listen', '>= 3.0.5', '< 3.2'
   gem 'pry'
   gem 'rbnacl'
   # Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring
